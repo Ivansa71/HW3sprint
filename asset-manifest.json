@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HW3sprint/static/css/main.653f13b2.css",
-    "main.js": "/HW3sprint/static/js/main.2b094937.js",
+    "main.js": "/HW3sprint/static/js/main.fc22bb1a.js",
     "static/js/27.28bad541.chunk.js": "/HW3sprint/static/js/27.28bad541.chunk.js",
     "static/media/avatar.png": "/HW3sprint/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/closeOutline.svg": "/HW3sprint/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.653f13b2.css",
-    "static/js/main.2b094937.js"
+    "static/js/main.fc22bb1a.js"
   ]
 }
