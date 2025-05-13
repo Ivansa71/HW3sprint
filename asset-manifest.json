@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/HW3sprint/static/css/main.50d11297.css",
+    "main.css": "/HW3sprint/static/css/main.69ee18bb.css",
     "main.js": "/HW3sprint/static/js/main.c7be2142.js",
     "static/js/27.28bad541.chunk.js": "/HW3sprint/static/js/27.28bad541.chunk.js",
     "static/media/avatar.png": "/HW3sprint/static/media/avatar.d947cb9d0d13765666b6.png",
@@ -12,7 +12,7 @@
     "static/media/burger.svg": "/HW3sprint/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg"
   },
   "entrypoints": [
-    "static/css/main.50d11297.css",
+    "static/css/main.69ee18bb.css",
     "static/js/main.c7be2142.js"
   ]
 }
