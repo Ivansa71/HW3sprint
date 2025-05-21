@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HW3sprint/static/css/main.b5587fb6.css",
-    "main.js": "/HW3sprint/static/js/main.db9cc354.js",
+    "main.css": "/HW3sprint/static/css/main.7c894aec.css",
+    "main.js": "/HW3sprint/static/js/main.0637200d.js",
     "static/js/27.28bad541.chunk.js": "/HW3sprint/static/js/27.28bad541.chunk.js",
     "static/media/avatar.png": "/HW3sprint/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/HW3sprint/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
@@ -12,7 +12,7 @@
     "static/media/burger.svg": "/HW3sprint/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg"
   },
   "entrypoints": [
-    "static/css/main.b5587fb6.css",
-    "static/js/main.db9cc354.js"
+    "static/css/main.7c894aec.css",
+    "static/js/main.0637200d.js"
   ]
 }
