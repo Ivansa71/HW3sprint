@@ -14,7 +14,7 @@ function Clock() {
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
         const id: number = window.setInterval(() => {
             setDate(new Date());
-        }, 1000);
+        }, 0);
         
         setTimerId(id);
     }
