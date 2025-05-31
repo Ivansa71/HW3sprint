@@ -34,12 +34,12 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = `${date.toLocaleTimeString()}` || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
-    const stringDate = Intl.DateTimeFormat('ru', {day: 'numeric', month: 'numeric', year: "numeric"} ) || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
+    const stringTime = date.toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'}) || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01)
+    const stringDate = Intl.DateTimeFormat('ru', {day: 'numeric', month: 'numeric', year: "numeric"}).format(date) || <br/> 
 
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
-    const stringDay = Intl.DateTimeFormat('en', {weekday: 'long'} ) || <br/> // пишут студенты
-    const stringMonth = Intl.DateTimeFormat('en', {month: 'long'} ) || <br/> // пишут студенты
+    const stringDay = Intl.DateTimeFormat('en', {weekday: 'long'}).format(date) || <br/> 
+    const stringMonth = Intl.DateTimeFormat('en', {month: 'long'}).format(date) || <br/> 
 
     return (
         <div className={s.clock}>
@@ -49,7 +49,7 @@ function Clock() {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
-                <span id={'hw9-day'}>{stringDay.format(date)}</span>,{' '}
+                <span id={'hw9-day'}>{stringDay}</span>,{' '}
                 <span id={'hw9-time'}>
                     <strong>{stringTime}</strong>
                 </span>
@@ -59,8 +59,8 @@ function Clock() {
                 <div className={s.more}>
                     {show ? (
                         <>
-                            <span id={'hw9-month'}>{stringMonth.format(date)}</span>,{' '}
-                            <span id={'hw9-date'}>{stringDate.format(date)}</span>
+                            <span id={'hw9-month'}>{stringMonth}</span>,{' '}
+                            <span id={'hw9-date'}>{stringDate}</span>
                         </>
                     ) : (
                         <>
