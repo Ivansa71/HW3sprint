@@ -28,16 +28,18 @@ const HW13 = () => {
         setIsLoading(true)
 
         axios
-            .post(url, { success: x })
+            .post(url, { success: x } )
             .then((res) => {
+
                 setCode('Код 200!')
                 setImage(success200)
                 setText(res.data.errorText)
                 setInfo(res.data.info)
             })
             .catch((e) => {
-                console.log(e)
+
                 if (e.response) {
+
                     const status = e.response.status
                     if (status === 400) {
                         setCode('Ошибка 400!')
@@ -53,7 +55,7 @@ const HW13 = () => {
                         setCode(`Ошибка ${status}!`)
                         setImage(errorUnknown)
                         setText('Неизвестная ошибка')
-                        setInfo('Что-то пошло не так')
+                        setInfo('Error')
                     }
                 } else {
                     setCode('Ошибка!')
